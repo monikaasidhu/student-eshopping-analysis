@@ -1,0 +1,61 @@
+"Gender","Platform","Spend_Category","Count"
+"Female","amazon","Low",12
+"Female","amazon","Medium",2
+"Female","amazon","High",10
+"Female","flipkart","Low",6
+"Female","flipkart","Medium",1
+"Female","flipkart","High",3
+"Female","luxury_brands","Low",3
+"Female","luxury_brands","High",3
+"Female","meesho","Low",5
+"Female","meesho","Medium",2
+"Female","myntra","Low",13
+"Female","myntra","Medium",1
+"Female","myntra","High",5
+"Female","myntra","Very High",1
+"Female","not_disclosed","Low",2
+"Female","not_disclosed","High",1
+"Female","savana","Low",5
+"Female","savana","High",2
+"Female","savana ","Low",6
+"Female","savana ","High",4
+"Female","savana ","Very High",2
+"Male","amazon","Low",9
+"Male","amazon","High",4
+"Male","flipkart","Low",11
+"Male","flipkart","Medium",1
+"Male","flipkart","High",6
+"Male","luxury_brands","Low",4
+"Male","luxury_brands","High",1
+"Male","meesho","Low",8
+"Male","meesho","Medium",1
+"Male","meesho","High",4
+"Male","myntra","Low",3
+"Male","not_disclosed","Low",2
+"Male","savana","Low",2
+"Male","savana","High",1
+"Male","savana","Very High",1
+"Male","savana ","Low",1
+"Male","savana ","Medium",1
+"Not Disclosed","amazon","Low",2
+"Not Disclosed","amazon","High",2
+"Not Disclosed","flipkart","Low",3
+"Not Disclosed","luxury_brands","Low",4
+"Not Disclosed","luxury_brands","Medium",1
+"Not Disclosed","luxury_brands","High",1
+"Not Disclosed","meesho","Low",1
+"Not Disclosed","myntra","Low",5
+"Not Disclosed","myntra","Medium",2
+"Not Disclosed","myntra","High",1
+"Not Disclosed","not_disclosed","Low",8
+"Not Disclosed","not_disclosed","Medium",1
+"Not Disclosed","not_disclosed","High",4
+"Not Disclosed","not_disclosed","Very High",1
+"Not Disclosed","savana","Low",1
+"Not Disclosed","savana","High",2
+"Not Disclosed","savana ","Low",1
+"Not Disclosed","savana ","High",3
+"Not Disclosed","savana ","Very High",1
+"Not Specified","amazon","Low",1
+"Not Specified","meesho","Low",1
+"Not Specified","savana","Low",1

@@ -1,0 +1,301 @@
+"","rules","support","confidence","coverage","lift","count"
+"1","{Discount_Importance=Not important} => {Spend_Category=Low}",0.0555555555555556,0.636363636363636,0.0873015873015873,1.00227272727273,7
+"2","{Category=Essentials} => {Frequency=Monthly}",0.0555555555555556,0.636363636363636,0.0873015873015873,1.45785123966942,7
+"3","{Category=Home_Decor} => {Priority=Cost- focused}",0.0714285714285714,0.75,0.0952380952380952,3.5,9
+"4","{Category=Home_Decor} => {Spend_Category=Low}",0.0634920634920635,0.666666666666667,0.0952380952380952,1.05,8
+"5","{Payment_Method=Net banking/other} => {Spend_Category=Low}",0.0793650793650794,0.625,0.126984126984127,0.984375,10
+"6","{Payment_Method=Card (Debit/Credit)} => {Spend_Category=Low}",0.0952380952380952,0.705882352941177,0.134920634920635,1.11176470588235,12
+"7","{Peer_Influence=No} => {Spend_Category=Low}",0.119047619047619,0.714285714285714,0.166666666666667,1.125,15
+"8","{Discount_Importance=Low importance} => {Spend_Category=Low}",0.111111111111111,0.666666666666667,0.166666666666667,1.05,14
+"9","{Platform=meesho} => {Spend_Category=Low}",0.119047619047619,0.681818181818182,0.174603174603175,1.07386363636364,15
+"10","{Frequency=Only during festive periods} => {Spend_Category=Low}",0.134920634920635,0.772727272727273,0.174603174603175,1.21704545454545,17
+"11","{Frequency=Rarely} => {Spend_Category=Low}",0.126984126984127,0.666666666666667,0.19047619047619,1.05,16
+"12","{Priority=Depends on product category} => {Spend_Category=Low}",0.119047619047619,0.625,0.19047619047619,0.984375,15
+"13","{Frequency=Weekly} => {Spend_Category=Low}",0.142857142857143,0.72,0.198412698412698,1.134,18
+"14","{Priority=Brand- focused} => {Spend_Category=Low}",0.150793650793651,0.730769230769231,0.206349206349206,1.15096153846154,19
+"15","{Category=Electronics} => {Spend_Category=Low}",0.150793650793651,0.730769230769231,0.206349206349206,1.15096153846154,19
+"16","{Platform=myntra} => {Category=Fashion}",0.166666666666667,0.67741935483871,0.246031746031746,1.61046865489957,21
+"17","{Platform=myntra} => {Spend_Category=Low}",0.166666666666667,0.67741935483871,0.246031746031746,1.06693548387097,21
+"18","{Platform=flipkart} => {Spend_Category=Low}",0.158730158730159,0.645161290322581,0.246031746031746,1.01612903225806,20
+"19","{Spend_Category=High} => {Frequency=Monthly}",0.174603174603175,0.628571428571429,0.277777777777778,1.44,22
+"20","{Peer_Influence=Yes, often} => {Spend_Category=Low}",0.222222222222222,0.717948717948718,0.309523809523809,1.13076923076923,28
+"21","{Discount_Importance=High importance} => {Spend_Category=Low}",0.26984126984127,0.693877551020408,0.388888888888889,1.09285714285714,34
+"22","{Priority=Balanced (both brand and cost)} => {Spend_Category=Low}",0.238095238095238,0.612244897959184,0.388888888888889,0.964285714285714,30
+"23","{Category=Fashion} => {Payment_Method=UPI}",0.253968253968254,0.60377358490566,0.420634920634921,1.31164606376057,32
+"24","{Category=Fashion} => {Spend_Category=Low}",0.301587301587302,0.716981132075472,0.420634920634921,1.12924528301887,38
+"25","{Payment_Method=UPI} => {Spend_Category=Low}",0.301587301587302,0.655172413793103,0.46031746031746,1.03189655172414,38
+"26","{Frequency=Rarely,Peer_Influence=No} => {Spend_Category=Low}",0.0555555555555556,1,0.0555555555555556,1.575,7
+"27","{Category=Electronics,Peer_Influence=No} => {Spend_Category=Low}",0.0555555555555556,1,0.0555555555555556,1.575,7
+"28","{Priority=Balanced (both brand and cost),Peer_Influence=No} => {Spend_Category=Low}",0.0555555555555556,0.875,0.0634920634920635,1.378125,7
+"29","{Platform=meesho,Peer_Influence=Yes, often} => {Spend_Category=Low}",0.0555555555555556,0.777777777777778,0.0714285714285714,1.225,7
+"30","{Platform=meesho,Discount_Importance=Medium importance} => {Spend_Category=Low}",0.0634920634920635,0.8,0.0793650793650794,1.26,8
+"31","{Platform=meesho,Frequency=Monthly} => {Spend_Category=Low}",0.0634920634920635,0.727272727272727,0.0873015873015873,1.14545454545455,8
+"32","{Platform=amazon,Frequency=Only during festive periods} => {Discount_Importance=High importance}",0.0555555555555556,0.7,0.0793650793650794,1.8,7
+"33","{Frequency=Only during festive periods,Discount_Importance=High importance} => {Platform=amazon}",0.0555555555555556,0.7,0.0793650793650794,2.1,7
+"34","{Platform=amazon,Frequency=Only during festive periods} => {Priority=Balanced (both brand and cost)}",0.0555555555555556,0.7,0.0793650793650794,1.8,7
+"35","{Priority=Balanced (both brand and cost),Frequency=Only during festive periods} => {Platform=amazon}",0.0555555555555556,0.7,0.0793650793650794,2.1,7
+"36","{Platform=amazon,Frequency=Only during festive periods} => {Spend_Category=Low}",0.0634920634920635,0.8,0.0793650793650794,1.26,8
+"37","{Frequency=Only during festive periods,Discount_Importance=High importance} => {Priority=Balanced (both brand and cost)}",0.0555555555555556,0.7,0.0793650793650794,1.8,7
+"38","{Priority=Balanced (both brand and cost),Frequency=Only during festive periods} => {Discount_Importance=High importance}",0.0555555555555556,0.7,0.0793650793650794,1.8,7
+"39","{Frequency=Only during festive periods,Discount_Importance=High importance} => {Spend_Category=Low}",0.0634920634920635,0.8,0.0793650793650794,1.26,8
+"40","{Priority=Balanced (both brand and cost),Frequency=Only during festive periods} => {Spend_Category=Low}",0.0634920634920635,0.8,0.0793650793650794,1.26,8
+"41","{Platform=myntra,Frequency=Rarely} => {Spend_Category=Low}",0.0555555555555556,0.7,0.0793650793650794,1.1025,7
+"42","{Frequency=Rarely,Discount_Importance=High importance} => {Category=Fashion}",0.0555555555555556,0.777777777777778,0.0714285714285714,1.84905660377358,7
+"43","{Category=Fashion,Frequency=Rarely} => {Discount_Importance=High importance}",0.0555555555555556,0.636363636363636,0.0873015873015873,1.63636363636364,7
+"44","{Frequency=Rarely,Discount_Importance=High importance} => {Spend_Category=Low}",0.0634920634920635,0.888888888888889,0.0714285714285714,1.4,8
+"45","{Category=Fashion,Frequency=Rarely} => {Spend_Category=Low}",0.0714285714285714,0.818181818181818,0.0873015873015873,1.28863636363636,9
+"46","{Frequency=Rarely,Payment_Method=UPI} => {Spend_Category=Low}",0.0555555555555556,0.7,0.0793650793650794,1.1025,7
+"47","{Category=Fashion,Priority=Depends on product category} => {Discount_Importance=High importance}",0.0555555555555556,0.636363636363636,0.0873015873015873,1.63636363636364,7
+"48","{Priority=Depends on product category,Frequency=Monthly} => {Discount_Importance=High importance}",0.0555555555555556,0.636363636363636,0.0873015873015873,1.63636363636364,7
+"49","{Priority=Depends on product category,Payment_Method=UPI} => {Discount_Importance=High importance}",0.0555555555555556,0.875,0.0634920634920635,2.25,7
+"50","{Category=Fashion,Priority=Depends on product category} => {Spend_Category=Low}",0.0793650793650794,0.909090909090909,0.0873015873015873,1.43181818181818,10
+"51","{Priority=Depends on product category,Spend_Category=Low} => {Category=Fashion}",0.0793650793650794,0.666666666666667,0.119047619047619,1.58490566037736,10
+"52","{Frequency=Weekly,Peer_Influence=Yes, often} => {Spend_Category=Low}",0.0714285714285714,0.9,0.0793650793650794,1.4175,9
+"53","{Frequency=Weekly,Peer_Influence=Sometimes} => {Priority=Balanced (both brand and cost)}",0.0555555555555556,0.777777777777778,0.0714285714285714,2,7
+"54","{Priority=Balanced (both brand and cost),Frequency=Weekly} => {Peer_Influence=Sometimes}",0.0555555555555556,0.7,0.0793650793650794,2.205,7
+"55","{Frequency=Weekly,Discount_Importance=High importance} => {Spend_Category=Low}",0.0555555555555556,0.875,0.0634920634920635,1.378125,7
+"56","{Priority=Balanced (both brand and cost),Frequency=Weekly} => {Spend_Category=Low}",0.0555555555555556,0.7,0.0793650793650794,1.1025,7
+"57","{Category=Fashion,Frequency=Weekly} => {Spend_Category=Low}",0.0714285714285714,0.9,0.0793650793650794,1.4175,9
+"58","{Frequency=Weekly,Payment_Method=UPI} => {Spend_Category=Low}",0.0634920634920635,0.888888888888889,0.0714285714285714,1.4,8
+"59","{Priority=Brand- focused,Peer_Influence=Yes, often} => {Spend_Category=Low}",0.0793650793650794,0.909090909090909,0.0873015873015873,1.43181818181818,10
+"60","{Platform=amazon,Priority=Brand- focused} => {Spend_Category=Low}",0.0555555555555556,0.777777777777778,0.0714285714285714,1.225,7
+"61","{Priority=Brand- focused,Discount_Importance=Medium importance} => {Spend_Category=Low}",0.0555555555555556,0.636363636363636,0.0873015873015873,1.00227272727273,7
+"62","{Category=Fashion,Priority=Brand- focused} => {Spend_Category=Low}",0.0714285714285714,0.9,0.0793650793650794,1.4175,9
+"63","{Priority=Brand- focused,Payment_Method=UPI} => {Spend_Category=Low}",0.0634920634920635,0.727272727272727,0.0873015873015873,1.14545454545455,8
+"64","{Category=Electronics,Peer_Influence=Yes, often} => {Spend_Category=Low}",0.0555555555555556,1,0.0555555555555556,1.575,7
+"65","{Category=Electronics,Discount_Importance=High importance} => {Platform=amazon}",0.0555555555555556,0.7,0.0793650793650794,2.1,7
+"66","{Category=Electronics,Payment_Method=UPI} => {Platform=amazon}",0.0634920634920635,0.666666666666667,0.0952380952380952,2,8
+"67","{Platform=amazon,Category=Electronics} => {Spend_Category=Low}",0.0714285714285714,0.642857142857143,0.111111111111111,1.0125,9
+"68","{Category=Electronics,Discount_Importance=Medium importance} => {Spend_Category=Low}",0.0634920634920635,0.727272727272727,0.0873015873015873,1.14545454545455,8
+"69","{Category=Electronics,Discount_Importance=High importance} => {Spend_Category=Low}",0.0634920634920635,0.8,0.0793650793650794,1.26,8
+"70","{Category=Electronics,Priority=Balanced (both brand and cost)} => {Spend_Category=Low}",0.0634920634920635,0.727272727272727,0.0873015873015873,1.14545454545455,8
+"71","{Category=Electronics,Payment_Method=UPI} => {Spend_Category=Low}",0.0634920634920635,0.666666666666667,0.0952380952380952,1.05,8
+"72","{Platform=myntra,Peer_Influence=Rarely} => {Payment_Method=UPI}",0.0555555555555556,0.777777777777778,0.0714285714285714,1.68965517241379,7
+"73","{Peer_Influence=Rarely,Spend_Category=High} => {Frequency=Monthly}",0.0555555555555556,0.875,0.0634920634920635,2.00454545454545,7
+"74","{Peer_Influence=Rarely,Discount_Importance=High importance} => {Payment_Method=UPI}",0.0555555555555556,0.636363636363636,0.0873015873015873,1.38244514106583,7
+"75","{Peer_Influence=Rarely,Discount_Importance=High importance} => {Spend_Category=Low}",0.0555555555555556,0.636363636363636,0.0873015873015873,1.00227272727273,7
+"76","{Category=Fashion,Peer_Influence=Rarely} => {Spend_Category=Low}",0.0714285714285714,0.818181818181818,0.0873015873015873,1.28863636363636,9
+"77","{Peer_Influence=Rarely,Spend_Category=Low} => {Category=Fashion}",0.0714285714285714,0.6,0.119047619047619,1.42641509433962,9
+"78","{Priority=Cost- focused,Peer_Influence=Yes, often} => {Frequency=Monthly}",0.0555555555555556,0.636363636363636,0.0873015873015873,1.45785123966942,7
+"79","{Priority=Cost- focused,Peer_Influence=Yes, often} => {Spend_Category=Low}",0.0634920634920635,0.727272727272727,0.0873015873015873,1.14545454545455,8
+"80","{Priority=Cost- focused,Discount_Importance=Medium importance} => {Payment_Method=UPI}",0.0634920634920635,0.666666666666667,0.0952380952380952,1.44827586206897,8
+"81","{Priority=Cost- focused,Payment_Method=UPI} => {Discount_Importance=Medium importance}",0.0634920634920635,0.727272727272727,0.0873015873015873,2.03636363636364,8
+"82","{Priority=Cost- focused,Payment_Method=UPI} => {Frequency=Monthly}",0.0555555555555556,0.636363636363636,0.0873015873015873,1.45785123966942,7
+"83","{Platform=myntra,Peer_Influence=Sometimes} => {Category=Fashion}",0.0634920634920635,0.8,0.0793650793650794,1.90188679245283,8
+"84","{Platform=myntra,Discount_Importance=Medium importance} => {Payment_Method=UPI}",0.0555555555555556,0.777777777777778,0.0714285714285714,1.68965517241379,7
+"85","{Platform=myntra,Discount_Importance=High importance} => {Category=Fashion}",0.0714285714285714,0.75,0.0952380952380952,1.78301886792453,9
+"86","{Platform=myntra,Discount_Importance=High importance} => {Spend_Category=Low}",0.0634920634920635,0.666666666666667,0.0952380952380952,1.05,8
+"87","{Platform=myntra,Priority=Balanced (both brand and cost)} => {Category=Fashion}",0.0555555555555556,0.875,0.0634920634920635,2.08018867924528,7
+"88","{Platform=myntra,Frequency=Monthly} => {Category=Fashion}",0.0634920634920635,0.727272727272727,0.0873015873015873,1.72898799313894,8
+"89","{Platform=myntra,Category=Fashion} => {Payment_Method=UPI}",0.111111111111111,0.666666666666667,0.166666666666667,1.44827586206897,14
+"90","{Platform=myntra,Payment_Method=UPI} => {Category=Fashion}",0.111111111111111,0.823529411764706,0.134920634920635,1.95782463928968,14
+"91","{Platform=myntra,Category=Fashion} => {Spend_Category=Low}",0.126984126984127,0.761904761904762,0.166666666666667,1.2,16
+"92","{Platform=myntra,Spend_Category=Low} => {Category=Fashion}",0.126984126984127,0.761904761904762,0.166666666666667,1.81132075471698,16
+"93","{Platform=myntra,Frequency=Monthly} => {Payment_Method=UPI}",0.0793650793650794,0.909090909090909,0.0873015873015873,1.97492163009404,10
+"94","{Platform=myntra,Frequency=Monthly} => {Spend_Category=Low}",0.0555555555555556,0.636363636363636,0.0873015873015873,1.00227272727273,7
+"95","{Platform=myntra,Payment_Method=UPI} => {Spend_Category=Low}",0.0952380952380952,0.705882352941177,0.134920634920635,1.11176470588235,12
+"96","{Platform=flipkart,Spend_Category=High} => {Frequency=Monthly}",0.0634920634920635,0.888888888888889,0.0714285714285714,2.03636363636364,8
+"97","{Platform=flipkart,Payment_Method=Cash on delivery (COD)} => {Spend_Category=Low}",0.0634920634920635,0.727272727272727,0.0873015873015873,1.14545454545455,8
+"98","{Platform=flipkart,Discount_Importance=Medium importance} => {Frequency=Monthly}",0.0793650793650794,0.833333333333333,0.0952380952380952,1.90909090909091,10
+"99","{Platform=flipkart,Frequency=Monthly} => {Discount_Importance=Medium importance}",0.0793650793650794,0.625,0.126984126984127,1.75,10
+"100","{Platform=flipkart,Discount_Importance=High importance} => {Spend_Category=Low}",0.0555555555555556,0.777777777777778,0.0714285714285714,1.225,7
+"101","{Platform=flipkart,Payment_Method=UPI} => {Category=Fashion}",0.0555555555555556,0.7,0.0793650793650794,1.66415094339623,7
+"102","{Platform=flipkart,Category=Fashion} => {Spend_Category=Low}",0.0793650793650794,0.714285714285714,0.111111111111111,1.125,10
+"103","{Platform=flipkart,Payment_Method=UPI} => {Frequency=Monthly}",0.0555555555555556,0.7,0.0793650793650794,1.60363636363636,7
+"104","{Payment_Method=Cash on delivery (COD),Spend_Category=High} => {Discount_Importance=Medium importance}",0.0555555555555556,0.7,0.0793650793650794,1.96,7
+"105","{Priority=Balanced (both brand and cost),Spend_Category=High} => {Peer_Influence=Sometimes}",0.0714285714285714,0.6,0.119047619047619,1.89,9
+"106","{Priority=Balanced (both brand and cost),Spend_Category=High} => {Platform=amazon}",0.0714285714285714,0.6,0.119047619047619,1.8,9
+"107","{Discount_Importance=Medium importance,Spend_Category=High} => {Frequency=Monthly}",0.0873015873015873,0.647058823529412,0.134920634920635,1.48235294117647,11
+"108","{Discount_Importance=High importance,Spend_Category=High} => {Frequency=Monthly}",0.0714285714285714,0.9,0.0793650793650794,2.06181818181818,9
+"109","{Discount_Importance=High importance,Spend_Category=High} => {Payment_Method=UPI}",0.0555555555555556,0.7,0.0793650793650794,1.52068965517241,7
+"110","{Category=Fashion,Spend_Category=High} => {Priority=Balanced (both brand and cost)}",0.0555555555555556,0.777777777777778,0.0714285714285714,2,7
+"111","{Priority=Balanced (both brand and cost),Spend_Category=High} => {Frequency=Monthly}",0.0793650793650794,0.666666666666667,0.119047619047619,1.52727272727273,10
+"112","{Priority=Balanced (both brand and cost),Spend_Category=High} => {Payment_Method=UPI}",0.0714285714285714,0.6,0.119047619047619,1.30344827586207,9
+"113","{Category=Fashion,Spend_Category=High} => {Frequency=Monthly}",0.0634920634920635,0.888888888888889,0.0714285714285714,2.03636363636364,8
+"114","{Category=Fashion,Spend_Category=High} => {Payment_Method=UPI}",0.0555555555555556,0.777777777777778,0.0714285714285714,1.68965517241379,7
+"115","{Payment_Method=UPI,Spend_Category=High} => {Frequency=Monthly}",0.103174603174603,0.764705882352941,0.134920634920635,1.75187165775401,13
+"116","{Peer_Influence=Yes, often,Payment_Method=Cash on delivery (COD)} => {Spend_Category=Low}",0.0555555555555556,0.636363636363636,0.0873015873015873,1.00227272727273,7
+"117","{Peer_Influence=Sometimes,Payment_Method=Cash on delivery (COD)} => {Discount_Importance=Medium importance}",0.0555555555555556,0.636363636363636,0.0873015873015873,1.78181818181818,7
+"118","{Platform=amazon,Payment_Method=Cash on delivery (COD)} => {Priority=Balanced (both brand and cost)}",0.0634920634920635,0.666666666666667,0.0952380952380952,1.71428571428571,8
+"119","{Discount_Importance=High importance,Payment_Method=Cash on delivery (COD)} => {Category=Fashion}",0.0634920634920635,0.8,0.0793650793650794,1.90188679245283,8
+"120","{Category=Fashion,Payment_Method=Cash on delivery (COD)} => {Discount_Importance=High importance}",0.0634920634920635,0.615384615384615,0.103174603174603,1.58241758241758,8
+"121","{Category=Fashion,Payment_Method=Cash on delivery (COD)} => {Spend_Category=Low}",0.0634920634920635,0.615384615384615,0.103174603174603,0.969230769230769,8
+"122","{Platform=amazon,Peer_Influence=Yes, often} => {Spend_Category=Low}",0.0873015873015873,0.785714285714286,0.111111111111111,1.2375,11
+"123","{Peer_Influence=Yes, often,Discount_Importance=Medium importance} => {Spend_Category=Low}",0.0793650793650794,0.625,0.126984126984127,0.984375,10
+"124","{Priority=Balanced (both brand and cost),Peer_Influence=Yes, often} => {Discount_Importance=High importance}",0.0793650793650794,0.769230769230769,0.103174603174603,1.97802197802198,10
+"125","{Peer_Influence=Yes, often,Discount_Importance=High importance} => {Category=Fashion}",0.0952380952380952,0.631578947368421,0.150793650793651,1.50148957298908,12
+"126","{Category=Fashion,Peer_Influence=Yes, often} => {Discount_Importance=High importance}",0.0952380952380952,0.75,0.126984126984127,1.92857142857143,12
+"127","{Peer_Influence=Yes, often,Discount_Importance=High importance} => {Spend_Category=Low}",0.111111111111111,0.736842105263158,0.150793650793651,1.16052631578947,14
+"128","{Priority=Balanced (both brand and cost),Peer_Influence=Yes, often} => {Category=Fashion}",0.0793650793650794,0.769230769230769,0.103174603174603,1.82873730043541,10
+"129","{Category=Fashion,Peer_Influence=Yes, often} => {Priority=Balanced (both brand and cost)}",0.0793650793650794,0.625,0.126984126984127,1.60714285714286,10
+"130","{Priority=Balanced (both brand and cost),Peer_Influence=Yes, often} => {Spend_Category=Low}",0.0634920634920635,0.615384615384615,0.103174603174603,0.969230769230769,8
+"131","{Category=Fashion,Peer_Influence=Yes, often} => {Payment_Method=UPI}",0.0873015873015873,0.6875,0.126984126984127,1.49353448275862,11
+"132","{Peer_Influence=Yes, often,Payment_Method=UPI} => {Category=Fashion}",0.0873015873015873,0.611111111111111,0.142857142857143,1.45283018867925,11
+"133","{Category=Fashion,Peer_Influence=Yes, often} => {Spend_Category=Low}",0.0873015873015873,0.6875,0.126984126984127,1.0828125,11
+"134","{Peer_Influence=Yes, often,Payment_Method=UPI} => {Spend_Category=Low}",0.103174603174603,0.722222222222222,0.142857142857143,1.1375,13
+"135","{Platform=amazon,Peer_Influence=Sometimes} => {Priority=Balanced (both brand and cost)}",0.0873015873015873,0.733333333333333,0.119047619047619,1.88571428571429,11
+"136","{Platform=amazon,Peer_Influence=Sometimes} => {Payment_Method=UPI}",0.0952380952380952,0.8,0.119047619047619,1.73793103448276,12
+"137","{Peer_Influence=Sometimes,Discount_Importance=Medium importance} => {Priority=Balanced (both brand and cost)}",0.0714285714285714,0.6,0.119047619047619,1.54285714285714,9
+"138","{Peer_Influence=Sometimes,Discount_Importance=Medium importance} => {Category=Fashion}",0.0714285714285714,0.6,0.119047619047619,1.42641509433962,9
+"139","{Peer_Influence=Sometimes,Discount_Importance=High importance} => {Payment_Method=UPI}",0.0793650793650794,0.714285714285714,0.111111111111111,1.55172413793103,10
+"140","{Peer_Influence=Sometimes,Discount_Importance=High importance} => {Spend_Category=Low}",0.0714285714285714,0.642857142857143,0.111111111111111,1.0125,9
+"141","{Peer_Influence=Sometimes,Payment_Method=UPI} => {Priority=Balanced (both brand and cost)}",0.103174603174603,0.619047619047619,0.166666666666667,1.59183673469388,13
+"142","{Category=Fashion,Peer_Influence=Sometimes} => {Frequency=Monthly}",0.103174603174603,0.684210526315789,0.150793650793651,1.56746411483254,13
+"143","{Frequency=Monthly,Peer_Influence=Sometimes} => {Category=Fashion}",0.103174603174603,0.684210526315789,0.150793650793651,1.6266137040715,13
+"144","{Category=Fashion,Peer_Influence=Sometimes} => {Payment_Method=UPI}",0.111111111111111,0.736842105263158,0.150793650793651,1.60072595281307,14
+"145","{Peer_Influence=Sometimes,Payment_Method=UPI} => {Category=Fashion}",0.111111111111111,0.666666666666667,0.166666666666667,1.58490566037736,14
+"146","{Category=Fashion,Peer_Influence=Sometimes} => {Spend_Category=Low}",0.103174603174603,0.684210526315789,0.150793650793651,1.07763157894737,13
+"147","{Frequency=Monthly,Peer_Influence=Sometimes} => {Payment_Method=UPI}",0.111111111111111,0.736842105263158,0.150793650793651,1.60072595281307,14
+"148","{Peer_Influence=Sometimes,Payment_Method=UPI} => {Frequency=Monthly}",0.111111111111111,0.666666666666667,0.166666666666667,1.52727272727273,14
+"149","{Peer_Influence=Sometimes,Payment_Method=UPI} => {Spend_Category=Low}",0.103174603174603,0.619047619047619,0.166666666666667,0.975,13
+"150","{Platform=amazon,Discount_Importance=High importance} => {Priority=Balanced (both brand and cost)}",0.103174603174603,0.65,0.158730158730159,1.67142857142857,13
+"151","{Platform=amazon,Category=Fashion} => {Discount_Importance=High importance}",0.0714285714285714,0.818181818181818,0.0873015873015873,2.1038961038961,9
+"152","{Platform=amazon,Discount_Importance=High importance} => {Payment_Method=UPI}",0.111111111111111,0.7,0.158730158730159,1.52068965517241,14
+"153","{Platform=amazon,Payment_Method=UPI} => {Discount_Importance=High importance}",0.111111111111111,0.608695652173913,0.182539682539683,1.56521739130435,14
+"154","{Platform=amazon,Discount_Importance=High importance} => {Spend_Category=Low}",0.111111111111111,0.7,0.158730158730159,1.1025,14
+"155","{Platform=amazon,Category=Fashion} => {Priority=Balanced (both brand and cost)}",0.0714285714285714,0.818181818181818,0.0873015873015873,2.1038961038961,9
+"156","{Platform=amazon,Category=Fashion} => {Payment_Method=UPI}",0.0555555555555556,0.636363636363636,0.0873015873015873,1.38244514106583,7
+"157","{Platform=amazon,Category=Fashion} => {Spend_Category=Low}",0.0555555555555556,0.636363636363636,0.0873015873015873,1.00227272727273,7
+"158","{Platform=amazon,Frequency=Monthly} => {Payment_Method=UPI}",0.0873015873015873,0.647058823529412,0.134920634920635,1.40567951318458,11
+"159","{Platform=amazon,Payment_Method=UPI} => {Spend_Category=Low}",0.111111111111111,0.608695652173913,0.182539682539683,0.958695652173913,14
+"160","{Priority=Balanced (both brand and cost),Discount_Importance=Medium importance} => {Frequency=Monthly}",0.0793650793650794,0.625,0.126984126984127,1.43181818181818,10
+"161","{Priority=Balanced (both brand and cost),Discount_Importance=Medium importance} => {Payment_Method=UPI}",0.0873015873015873,0.6875,0.126984126984127,1.49353448275862,11
+"162","{Category=Fashion,Discount_Importance=Medium importance} => {Frequency=Monthly}",0.0952380952380952,0.75,0.126984126984127,1.71818181818182,12
+"163","{Category=Fashion,Discount_Importance=Medium importance} => {Payment_Method=UPI}",0.0873015873015873,0.6875,0.126984126984127,1.49353448275862,11
+"164","{Category=Fashion,Discount_Importance=Medium importance} => {Spend_Category=Low}",0.0793650793650794,0.625,0.126984126984127,0.984375,10
+"165","{Priority=Balanced (both brand and cost),Discount_Importance=High importance} => {Category=Fashion}",0.134920634920635,0.708333333333333,0.19047619047619,1.68396226415094,17
+"166","{Category=Fashion,Discount_Importance=High importance} => {Priority=Balanced (both brand and cost)}",0.134920634920635,0.607142857142857,0.222222222222222,1.56122448979592,17
+"167","{Category=Fashion,Priority=Balanced (both brand and cost)} => {Discount_Importance=High importance}",0.134920634920635,0.68,0.198412698412698,1.74857142857143,17
+"168","{Priority=Balanced (both brand and cost),Discount_Importance=High importance} => {Payment_Method=UPI}",0.126984126984127,0.666666666666667,0.19047619047619,1.44827586206897,16
+"169","{Priority=Balanced (both brand and cost),Discount_Importance=High importance} => {Spend_Category=Low}",0.134920634920635,0.708333333333333,0.19047619047619,1.115625,17
+"170","{Category=Fashion,Discount_Importance=High importance} => {Payment_Method=UPI}",0.142857142857143,0.642857142857143,0.222222222222222,1.39655172413793,18
+"171","{Discount_Importance=High importance,Payment_Method=UPI} => {Category=Fashion}",0.142857142857143,0.620689655172414,0.23015873015873,1.47560182173064,18
+"172","{Category=Fashion,Discount_Importance=High importance} => {Spend_Category=Low}",0.158730158730159,0.714285714285714,0.222222222222222,1.125,20
+"173","{Frequency=Monthly,Discount_Importance=High importance} => {Payment_Method=UPI}",0.126984126984127,0.727272727272727,0.174603174603175,1.57993730407524,16
+"174","{Discount_Importance=High importance,Payment_Method=UPI} => {Spend_Category=Low}",0.166666666666667,0.724137931034483,0.23015873015873,1.14051724137931,21
+"175","{Discount_Importance=High importance,Spend_Category=Low} => {Payment_Method=UPI}",0.166666666666667,0.617647058823529,0.26984126984127,1.34178498985801,21
+"176","{Priority=Balanced (both brand and cost),Frequency=Monthly} => {Category=Fashion}",0.103174603174603,0.619047619047619,0.166666666666667,1.47169811320755,13
+"177","{Category=Fashion,Priority=Balanced (both brand and cost)} => {Payment_Method=UPI}",0.142857142857143,0.72,0.198412698412698,1.56413793103448,18
+"178","{Priority=Balanced (both brand and cost),Payment_Method=UPI} => {Category=Fashion}",0.142857142857143,0.642857142857143,0.222222222222222,1.52830188679245,18
+"179","{Category=Fashion,Priority=Balanced (both brand and cost)} => {Spend_Category=Low}",0.119047619047619,0.6,0.198412698412698,0.945,15
+"180","{Priority=Balanced (both brand and cost),Frequency=Monthly} => {Payment_Method=UPI}",0.111111111111111,0.666666666666667,0.166666666666667,1.44827586206897,14
+"181","{Priority=Balanced (both brand and cost),Payment_Method=UPI} => {Spend_Category=Low}",0.142857142857143,0.642857142857143,0.222222222222222,1.0125,18
+"182","{Priority=Balanced (both brand and cost),Spend_Category=Low} => {Payment_Method=UPI}",0.142857142857143,0.6,0.238095238095238,1.30344827586207,18
+"183","{Category=Fashion,Frequency=Monthly} => {Payment_Method=UPI}",0.150793650793651,0.76,0.198412698412698,1.65103448275862,19
+"184","{Category=Fashion,Payment_Method=UPI} => {Spend_Category=Low}",0.182539682539683,0.71875,0.253968253968254,1.13203125,23
+"185","{Category=Fashion,Spend_Category=Low} => {Payment_Method=UPI}",0.182539682539683,0.605263157894737,0.301587301587302,1.31488203266788,23
+"186","{Payment_Method=UPI,Spend_Category=Low} => {Category=Fashion}",0.182539682539683,0.605263157894737,0.301587301587302,1.43892750744786,23
+"187","{Platform=amazon,Frequency=Only during festive periods,Discount_Importance=High importance} => {Priority=Balanced (both brand and cost)}",0.0555555555555556,1,0.0555555555555556,2.57142857142857,7
+"188","{Platform=amazon,Priority=Balanced (both brand and cost),Frequency=Only during festive periods} => {Discount_Importance=High importance}",0.0555555555555556,1,0.0555555555555556,2.57142857142857,7
+"189","{Priority=Balanced (both brand and cost),Frequency=Only during festive periods,Discount_Importance=High importance} => {Platform=amazon}",0.0555555555555556,1,0.0555555555555556,3,7
+"190","{Platform=myntra,Category=Fashion,Discount_Importance=High importance} => {Payment_Method=UPI}",0.0555555555555556,0.777777777777778,0.0714285714285714,1.68965517241379,7
+"191","{Platform=myntra,Discount_Importance=High importance,Payment_Method=UPI} => {Category=Fashion}",0.0555555555555556,1,0.0555555555555556,2.37735849056604,7
+"192","{Platform=myntra,Category=Fashion,Discount_Importance=High importance} => {Spend_Category=Low}",0.0555555555555556,0.777777777777778,0.0714285714285714,1.225,7
+"193","{Platform=myntra,Discount_Importance=High importance,Spend_Category=Low} => {Category=Fashion}",0.0555555555555556,0.875,0.0634920634920635,2.08018867924528,7
+"194","{Platform=myntra,Category=Fashion,Frequency=Monthly} => {Payment_Method=UPI}",0.0634920634920635,1,0.0634920634920635,2.17241379310345,8
+"195","{Platform=myntra,Frequency=Monthly,Payment_Method=UPI} => {Category=Fashion}",0.0634920634920635,0.8,0.0793650793650794,1.90188679245283,8
+"196","{Platform=myntra,Category=Fashion,Payment_Method=UPI} => {Spend_Category=Low}",0.0873015873015873,0.785714285714286,0.111111111111111,1.2375,11
+"197","{Platform=myntra,Category=Fashion,Spend_Category=Low} => {Payment_Method=UPI}",0.0873015873015873,0.6875,0.126984126984127,1.49353448275862,11
+"198","{Platform=myntra,Payment_Method=UPI,Spend_Category=Low} => {Category=Fashion}",0.0873015873015873,0.916666666666667,0.0952380952380952,2.17924528301887,11
+"199","{Frequency=Monthly,Discount_Importance=High importance,Spend_Category=High} => {Payment_Method=UPI}",0.0555555555555556,0.777777777777778,0.0714285714285714,1.68965517241379,7
+"200","{Discount_Importance=High importance,Payment_Method=UPI,Spend_Category=High} => {Frequency=Monthly}",0.0555555555555556,1,0.0555555555555556,2.29090909090909,7
+"201","{Priority=Balanced (both brand and cost),Peer_Influence=Yes, often,Discount_Importance=High importance} => {Category=Fashion}",0.0714285714285714,0.9,0.0793650793650794,2.13962264150943,9
+"202","{Category=Fashion,Peer_Influence=Yes, often,Discount_Importance=High importance} => {Priority=Balanced (both brand and cost)}",0.0714285714285714,0.75,0.0952380952380952,1.92857142857143,9
+"203","{Category=Fashion,Priority=Balanced (both brand and cost),Peer_Influence=Yes, often} => {Discount_Importance=High importance}",0.0714285714285714,0.9,0.0793650793650794,2.31428571428571,9
+"204","{Category=Fashion,Peer_Influence=Yes, often,Discount_Importance=High importance} => {Payment_Method=UPI}",0.0634920634920635,0.666666666666667,0.0952380952380952,1.44827586206897,8
+"205","{Peer_Influence=Yes, often,Discount_Importance=High importance,Payment_Method=UPI} => {Category=Fashion}",0.0634920634920635,0.8,0.0793650793650794,1.90188679245283,8
+"206","{Category=Fashion,Peer_Influence=Yes, often,Payment_Method=UPI} => {Discount_Importance=High importance}",0.0634920634920635,0.727272727272727,0.0873015873015873,1.87012987012987,8
+"207","{Category=Fashion,Peer_Influence=Yes, often,Discount_Importance=High importance} => {Spend_Category=Low}",0.0634920634920635,0.666666666666667,0.0952380952380952,1.05,8
+"208","{Category=Fashion,Peer_Influence=Yes, often,Spend_Category=Low} => {Discount_Importance=High importance}",0.0634920634920635,0.727272727272727,0.0873015873015873,1.87012987012987,8
+"209","{Peer_Influence=Yes, often,Discount_Importance=High importance,Payment_Method=UPI} => {Spend_Category=Low}",0.0634920634920635,0.8,0.0793650793650794,1.26,8
+"210","{Peer_Influence=Yes, often,Payment_Method=UPI,Spend_Category=Low} => {Discount_Importance=High importance}",0.0634920634920635,0.615384615384615,0.103174603174603,1.58241758241758,8
+"211","{Category=Fashion,Peer_Influence=Yes, often,Payment_Method=UPI} => {Spend_Category=Low}",0.0634920634920635,0.727272727272727,0.0873015873015873,1.14545454545455,8
+"212","{Category=Fashion,Peer_Influence=Yes, often,Spend_Category=Low} => {Payment_Method=UPI}",0.0634920634920635,0.727272727272727,0.0873015873015873,1.57993730407524,8
+"213","{Peer_Influence=Yes, often,Payment_Method=UPI,Spend_Category=Low} => {Category=Fashion}",0.0634920634920635,0.615384615384615,0.103174603174603,1.46298984034833,8
+"214","{Platform=amazon,Peer_Influence=Sometimes,Discount_Importance=High importance} => {Priority=Balanced (both brand and cost)}",0.0555555555555556,0.875,0.0634920634920635,2.25,7
+"215","{Platform=amazon,Priority=Balanced (both brand and cost),Peer_Influence=Sometimes} => {Discount_Importance=High importance}",0.0555555555555556,0.636363636363636,0.0873015873015873,1.63636363636364,7
+"216","{Priority=Balanced (both brand and cost),Peer_Influence=Sometimes,Discount_Importance=High importance} => {Platform=amazon}",0.0555555555555556,0.875,0.0634920634920635,2.625,7
+"217","{Platform=amazon,Peer_Influence=Sometimes,Discount_Importance=High importance} => {Payment_Method=UPI}",0.0555555555555556,0.875,0.0634920634920635,1.90086206896552,7
+"218","{Peer_Influence=Sometimes,Discount_Importance=High importance,Payment_Method=UPI} => {Platform=amazon}",0.0555555555555556,0.7,0.0793650793650794,2.1,7
+"219","{Platform=amazon,Priority=Balanced (both brand and cost),Peer_Influence=Sometimes} => {Payment_Method=UPI}",0.0714285714285714,0.818181818181818,0.0873015873015873,1.77742946708464,9
+"220","{Platform=amazon,Peer_Influence=Sometimes,Payment_Method=UPI} => {Priority=Balanced (both brand and cost)}",0.0714285714285714,0.75,0.0952380952380952,1.92857142857143,9
+"221","{Priority=Balanced (both brand and cost),Peer_Influence=Sometimes,Payment_Method=UPI} => {Platform=amazon}",0.0714285714285714,0.692307692307692,0.103174603174603,2.07692307692308,9
+"222","{Platform=amazon,Priority=Balanced (both brand and cost),Payment_Method=UPI} => {Peer_Influence=Sometimes}",0.0714285714285714,0.692307692307692,0.103174603174603,2.18076923076923,9
+"223","{Platform=amazon,Peer_Influence=Sometimes,Spend_Category=Low} => {Payment_Method=UPI}",0.0555555555555556,0.875,0.0634920634920635,1.90086206896552,7
+"224","{Frequency=Monthly,Peer_Influence=Sometimes,Discount_Importance=High importance} => {Payment_Method=UPI}",0.0555555555555556,0.875,0.0634920634920635,1.90086206896552,7
+"225","{Peer_Influence=Sometimes,Discount_Importance=High importance,Payment_Method=UPI} => {Frequency=Monthly}",0.0555555555555556,0.7,0.0793650793650794,1.60363636363636,7
+"226","{Peer_Influence=Sometimes,Discount_Importance=High importance,Payment_Method=UPI} => {Spend_Category=Low}",0.0555555555555556,0.7,0.0793650793650794,1.1025,7
+"227","{Peer_Influence=Sometimes,Discount_Importance=High importance,Spend_Category=Low} => {Payment_Method=UPI}",0.0555555555555556,0.777777777777778,0.0714285714285714,1.68965517241379,7
+"228","{Category=Fashion,Priority=Balanced (both brand and cost),Peer_Influence=Sometimes} => {Payment_Method=UPI}",0.0634920634920635,0.8,0.0793650793650794,1.73793103448276,8
+"229","{Priority=Balanced (both brand and cost),Peer_Influence=Sometimes,Payment_Method=UPI} => {Category=Fashion}",0.0634920634920635,0.615384615384615,0.103174603174603,1.46298984034833,8
+"230","{Priority=Balanced (both brand and cost),Frequency=Monthly,Peer_Influence=Sometimes} => {Payment_Method=UPI}",0.0555555555555556,0.777777777777778,0.0714285714285714,1.68965517241379,7
+"231","{Category=Fashion,Frequency=Monthly,Peer_Influence=Sometimes} => {Payment_Method=UPI}",0.0873015873015873,0.846153846153846,0.103174603174603,1.83819628647215,11
+"232","{Category=Fashion,Peer_Influence=Sometimes,Payment_Method=UPI} => {Frequency=Monthly}",0.0873015873015873,0.785714285714286,0.111111111111111,1.8,11
+"233","{Frequency=Monthly,Peer_Influence=Sometimes,Payment_Method=UPI} => {Category=Fashion}",0.0873015873015873,0.785714285714286,0.111111111111111,1.86792452830189,11
+"234","{Category=Fashion,Frequency=Monthly,Peer_Influence=Sometimes} => {Spend_Category=Low}",0.0634920634920635,0.615384615384615,0.103174603174603,0.969230769230769,8
+"235","{Category=Fashion,Peer_Influence=Sometimes,Spend_Category=Low} => {Frequency=Monthly}",0.0634920634920635,0.615384615384615,0.103174603174603,1.40979020979021,8
+"236","{Frequency=Monthly,Peer_Influence=Sometimes,Spend_Category=Low} => {Category=Fashion}",0.0634920634920635,0.727272727272727,0.0873015873015873,1.72898799313894,8
+"237","{Category=Fashion,Peer_Influence=Sometimes,Payment_Method=UPI} => {Spend_Category=Low}",0.0714285714285714,0.642857142857143,0.111111111111111,1.0125,9
+"238","{Category=Fashion,Peer_Influence=Sometimes,Spend_Category=Low} => {Payment_Method=UPI}",0.0714285714285714,0.692307692307692,0.103174603174603,1.50397877984085,9
+"239","{Peer_Influence=Sometimes,Payment_Method=UPI,Spend_Category=Low} => {Category=Fashion}",0.0714285714285714,0.692307692307692,0.103174603174603,1.64586357039187,9
+"240","{Frequency=Monthly,Peer_Influence=Sometimes,Payment_Method=UPI} => {Spend_Category=Low}",0.0714285714285714,0.642857142857143,0.111111111111111,1.0125,9
+"241","{Frequency=Monthly,Peer_Influence=Sometimes,Spend_Category=Low} => {Payment_Method=UPI}",0.0714285714285714,0.818181818181818,0.0873015873015873,1.77742946708464,9
+"242","{Peer_Influence=Sometimes,Payment_Method=UPI,Spend_Category=Low} => {Frequency=Monthly}",0.0714285714285714,0.692307692307692,0.103174603174603,1.58601398601399,9
+"243","{Platform=amazon,Priority=Balanced (both brand and cost),Discount_Importance=High importance} => {Category=Fashion}",0.0634920634920635,0.615384615384615,0.103174603174603,1.46298984034833,8
+"244","{Platform=amazon,Category=Fashion,Discount_Importance=High importance} => {Priority=Balanced (both brand and cost)}",0.0634920634920635,0.888888888888889,0.0714285714285714,2.28571428571429,8
+"245","{Platform=amazon,Category=Fashion,Priority=Balanced (both brand and cost)} => {Discount_Importance=High importance}",0.0634920634920635,0.888888888888889,0.0714285714285714,2.28571428571429,8
+"246","{Platform=amazon,Priority=Balanced (both brand and cost),Discount_Importance=High importance} => {Payment_Method=UPI}",0.0634920634920635,0.615384615384615,0.103174603174603,1.3368700265252,8
+"247","{Platform=amazon,Priority=Balanced (both brand and cost),Payment_Method=UPI} => {Discount_Importance=High importance}",0.0634920634920635,0.615384615384615,0.103174603174603,1.58241758241758,8
+"248","{Platform=amazon,Priority=Balanced (both brand and cost),Discount_Importance=High importance} => {Spend_Category=Low}",0.0714285714285714,0.692307692307692,0.103174603174603,1.09038461538462,9
+"249","{Platform=amazon,Discount_Importance=High importance,Spend_Category=Low} => {Priority=Balanced (both brand and cost)}",0.0714285714285714,0.642857142857143,0.111111111111111,1.6530612244898,9
+"250","{Platform=amazon,Priority=Balanced (both brand and cost),Spend_Category=Low} => {Discount_Importance=High importance}",0.0714285714285714,0.692307692307692,0.103174603174603,1.78021978021978,9
+"251","{Platform=amazon,Frequency=Monthly,Discount_Importance=High importance} => {Payment_Method=UPI}",0.0634920634920635,0.888888888888889,0.0714285714285714,1.93103448275862,8
+"252","{Platform=amazon,Frequency=Monthly,Payment_Method=UPI} => {Discount_Importance=High importance}",0.0634920634920635,0.727272727272727,0.0873015873015873,1.87012987012987,8
+"253","{Platform=amazon,Discount_Importance=High importance,Payment_Method=UPI} => {Spend_Category=Low}",0.0793650793650794,0.714285714285714,0.111111111111111,1.125,10
+"254","{Platform=amazon,Discount_Importance=High importance,Spend_Category=Low} => {Payment_Method=UPI}",0.0793650793650794,0.714285714285714,0.111111111111111,1.55172413793103,10
+"255","{Platform=amazon,Payment_Method=UPI,Spend_Category=Low} => {Discount_Importance=High importance}",0.0793650793650794,0.714285714285714,0.111111111111111,1.83673469387755,10
+"256","{Category=Fashion,Priority=Balanced (both brand and cost),Discount_Importance=Medium importance} => {Payment_Method=UPI}",0.0555555555555556,0.875,0.0634920634920635,1.90086206896552,7
+"257","{Priority=Balanced (both brand and cost),Discount_Importance=Medium importance,Payment_Method=UPI} => {Category=Fashion}",0.0555555555555556,0.636363636363636,0.0873015873015873,1.51286449399657,7
+"258","{Category=Fashion,Discount_Importance=Medium importance,Payment_Method=UPI} => {Priority=Balanced (both brand and cost)}",0.0555555555555556,0.636363636363636,0.0873015873015873,1.63636363636364,7
+"259","{Priority=Balanced (both brand and cost),Frequency=Monthly,Discount_Importance=Medium importance} => {Payment_Method=UPI}",0.0555555555555556,0.7,0.0793650793650794,1.52068965517241,7
+"260","{Priority=Balanced (both brand and cost),Discount_Importance=Medium importance,Payment_Method=UPI} => {Frequency=Monthly}",0.0555555555555556,0.636363636363636,0.0873015873015873,1.45785123966942,7
+"261","{Category=Fashion,Frequency=Monthly,Discount_Importance=Medium importance} => {Payment_Method=UPI}",0.0634920634920635,0.666666666666667,0.0952380952380952,1.44827586206897,8
+"262","{Category=Fashion,Discount_Importance=Medium importance,Payment_Method=UPI} => {Frequency=Monthly}",0.0634920634920635,0.727272727272727,0.0873015873015873,1.66611570247934,8
+"263","{Category=Fashion,Discount_Importance=Medium importance,Spend_Category=Low} => {Frequency=Monthly}",0.0555555555555556,0.7,0.0793650793650794,1.60363636363636,7
+"264","{Priority=Balanced (both brand and cost),Frequency=Monthly,Discount_Importance=High importance} => {Category=Fashion}",0.0555555555555556,0.875,0.0634920634920635,2.08018867924528,7
+"265","{Category=Fashion,Frequency=Monthly,Discount_Importance=High importance} => {Priority=Balanced (both brand and cost)}",0.0555555555555556,0.636363636363636,0.0873015873015873,1.63636363636364,7
+"266","{Category=Fashion,Priority=Balanced (both brand and cost),Discount_Importance=High importance} => {Payment_Method=UPI}",0.0873015873015873,0.647058823529412,0.134920634920635,1.40567951318458,11
+"267","{Priority=Balanced (both brand and cost),Discount_Importance=High importance,Payment_Method=UPI} => {Category=Fashion}",0.0873015873015873,0.6875,0.126984126984127,1.63443396226415,11
+"268","{Category=Fashion,Discount_Importance=High importance,Payment_Method=UPI} => {Priority=Balanced (both brand and cost)}",0.0873015873015873,0.611111111111111,0.142857142857143,1.57142857142857,11
+"269","{Category=Fashion,Priority=Balanced (both brand and cost),Payment_Method=UPI} => {Discount_Importance=High importance}",0.0873015873015873,0.611111111111111,0.142857142857143,1.57142857142857,11
+"270","{Category=Fashion,Priority=Balanced (both brand and cost),Discount_Importance=High importance} => {Spend_Category=Low}",0.0873015873015873,0.647058823529412,0.134920634920635,1.01911764705882,11
+"271","{Priority=Balanced (both brand and cost),Discount_Importance=High importance,Spend_Category=Low} => {Category=Fashion}",0.0873015873015873,0.647058823529412,0.134920634920635,1.53829078801332,11
+"272","{Category=Fashion,Priority=Balanced (both brand and cost),Spend_Category=Low} => {Discount_Importance=High importance}",0.0873015873015873,0.733333333333333,0.119047619047619,1.88571428571429,11
+"273","{Priority=Balanced (both brand and cost),Frequency=Monthly,Discount_Importance=High importance} => {Payment_Method=UPI}",0.0555555555555556,0.875,0.0634920634920635,1.90086206896552,7
+"274","{Priority=Balanced (both brand and cost),Discount_Importance=High importance,Payment_Method=UPI} => {Spend_Category=Low}",0.0952380952380952,0.75,0.126984126984127,1.18125,12
+"275","{Priority=Balanced (both brand and cost),Discount_Importance=High importance,Spend_Category=Low} => {Payment_Method=UPI}",0.0952380952380952,0.705882352941177,0.134920634920635,1.53346855983773,12
+"276","{Priority=Balanced (both brand and cost),Payment_Method=UPI,Spend_Category=Low} => {Discount_Importance=High importance}",0.0952380952380952,0.666666666666667,0.142857142857143,1.71428571428571,12
+"277","{Category=Fashion,Frequency=Monthly,Discount_Importance=High importance} => {Payment_Method=UPI}",0.0714285714285714,0.818181818181818,0.0873015873015873,1.77742946708464,9
+"278","{Category=Fashion,Discount_Importance=High importance,Payment_Method=UPI} => {Spend_Category=Low}",0.111111111111111,0.777777777777778,0.142857142857143,1.225,14
+"279","{Category=Fashion,Discount_Importance=High importance,Spend_Category=Low} => {Payment_Method=UPI}",0.111111111111111,0.7,0.158730158730159,1.52068965517241,14
+"280","{Discount_Importance=High importance,Payment_Method=UPI,Spend_Category=Low} => {Category=Fashion}",0.111111111111111,0.666666666666667,0.166666666666667,1.58490566037736,14
+"281","{Category=Fashion,Payment_Method=UPI,Spend_Category=Low} => {Discount_Importance=High importance}",0.111111111111111,0.608695652173913,0.182539682539683,1.56521739130435,14
+"282","{Frequency=Monthly,Discount_Importance=High importance,Spend_Category=Low} => {Payment_Method=UPI}",0.0634920634920635,0.727272727272727,0.0873015873015873,1.57993730407524,8
+"283","{Category=Fashion,Priority=Balanced (both brand and cost),Frequency=Monthly} => {Payment_Method=UPI}",0.0873015873015873,0.846153846153846,0.103174603174603,1.83819628647215,11
+"284","{Category=Fashion,Priority=Balanced (both brand and cost),Payment_Method=UPI} => {Frequency=Monthly}",0.0873015873015873,0.611111111111111,0.142857142857143,1.4,11
+"285","{Priority=Balanced (both brand and cost),Frequency=Monthly,Payment_Method=UPI} => {Category=Fashion}",0.0873015873015873,0.785714285714286,0.111111111111111,1.86792452830189,11
+"286","{Category=Fashion,Priority=Balanced (both brand and cost),Payment_Method=UPI} => {Spend_Category=Low}",0.0952380952380952,0.666666666666667,0.142857142857143,1.05,12
+"287","{Category=Fashion,Priority=Balanced (both brand and cost),Spend_Category=Low} => {Payment_Method=UPI}",0.0952380952380952,0.8,0.119047619047619,1.73793103448276,12
+"288","{Priority=Balanced (both brand and cost),Payment_Method=UPI,Spend_Category=Low} => {Category=Fashion}",0.0952380952380952,0.666666666666667,0.142857142857143,1.58490566037736,12
+"289","{Priority=Balanced (both brand and cost),Frequency=Monthly,Spend_Category=Low} => {Payment_Method=UPI}",0.0555555555555556,0.7,0.0793650793650794,1.52068965517241,7
+"290","{Category=Fashion,Frequency=Monthly,Spend_Category=Low} => {Payment_Method=UPI}",0.0873015873015873,0.785714285714286,0.111111111111111,1.70689655172414,11
+"291","{Frequency=Monthly,Payment_Method=UPI,Spend_Category=Low} => {Category=Fashion}",0.0873015873015873,0.647058823529412,0.134920634920635,1.53829078801332,11
+"292","{Category=Fashion,Frequency=Monthly,Peer_Influence=Sometimes,Payment_Method=UPI} => {Spend_Category=Low}",0.0555555555555556,0.636363636363636,0.0873015873015873,1.00227272727273,7
+"293","{Category=Fashion,Frequency=Monthly,Peer_Influence=Sometimes,Spend_Category=Low} => {Payment_Method=UPI}",0.0555555555555556,0.875,0.0634920634920635,1.90086206896552,7
+"294","{Category=Fashion,Peer_Influence=Sometimes,Payment_Method=UPI,Spend_Category=Low} => {Frequency=Monthly}",0.0555555555555556,0.777777777777778,0.0714285714285714,1.78181818181818,7
+"295","{Frequency=Monthly,Peer_Influence=Sometimes,Payment_Method=UPI,Spend_Category=Low} => {Category=Fashion}",0.0555555555555556,0.777777777777778,0.0714285714285714,1.84905660377358,7
+"296","{Category=Fashion,Frequency=Monthly,Payment_Method=UPI,Spend_Category=Low} => {Peer_Influence=Sometimes}",0.0555555555555556,0.636363636363636,0.0873015873015873,2.00454545454545,7
+"297","{Category=Fashion,Priority=Balanced (both brand and cost),Discount_Importance=High importance,Payment_Method=UPI} => {Spend_Category=Low}",0.0634920634920635,0.727272727272727,0.0873015873015873,1.14545454545455,8
+"298","{Category=Fashion,Priority=Balanced (both brand and cost),Discount_Importance=High importance,Spend_Category=Low} => {Payment_Method=UPI}",0.0634920634920635,0.727272727272727,0.0873015873015873,1.57993730407524,8
+"299","{Priority=Balanced (both brand and cost),Discount_Importance=High importance,Payment_Method=UPI,Spend_Category=Low} => {Category=Fashion}",0.0634920634920635,0.666666666666667,0.0952380952380952,1.58490566037736,8
+"300","{Category=Fashion,Priority=Balanced (both brand and cost),Payment_Method=UPI,Spend_Category=Low} => {Discount_Importance=High importance}",0.0634920634920635,0.666666666666667,0.0952380952380952,1.71428571428571,8
