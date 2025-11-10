@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Student E-Shopping Insights - Project Presentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .presentation-container {
+            width: 100%;
+            max-width: 1200px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .slide {
+            display: none;
+            min-height: 700px;
+            padding: 60px;
+            position: relative;
+        }
+        
+        .slide.active {
+            display: block;
+            animation: slideIn 0.5s ease-in-out;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .title-slide {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .title-slide h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .title-slide .subtitle {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+        
+        .title-slide .team-info {
+            margin-top: 40px;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+        
+        h2 {
+            color: #667eea;
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            border-bottom: 4px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #764ba2;
+            font-size: 1.6em;
+            margin: 25px 0 15px 0;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .card h4 {
+            color: #667eea;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+        
+        .stat-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 10px 0;
+        }
+        
+        .stat-box .number {
+            font-size: 2.5em;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .stat-box .label {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        ul, ol {
+            margin-left: 25px;
+            line-height: 2;
+            font-size: 1.05em;
+        }
+        
+        li {
+            margin: 10px 0;
+        }
+        
+        .key-finding {
+            background: #e7f3ff;
+            border-left: 5px solid #2196F3;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .key-finding strong {
+            color: #2196F3;
+            font-size: 1.2em;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 1em;
+        }
+        
+        th {
+            background: #667eea;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+        
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .chart-container {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        /* New: Improved image styling for charts throughout slides */
+        .chart-image {
+            max-width: 100%;
+            width: 600px;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            object-fit: contain;
+        }
+        
+        .methodology-step {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .step-number {
+            background: #667eea;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .navigation {
+            background: #f8f9fa;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s;
+        }
+        
+        .nav-button:hover {
+            background: #764ba2;
+            transform: scale(1.05);
+        }
+        
+        .nav-button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: scale(1);
+        }
+        
+        .slide-counter {
+            font-size: 1.1em;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .institute-logo {
+            width: 120px;
+            height: 120px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+        .conclusion-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation-container">
+
+        <!-- Slide 1: Title Slide -->
+        <div class="slide active title-slide">
+            <div class="icon">🛍️</div>
+            <h1>Student E-Shopping Insights</h1>
+            <div class="subtitle">
+                DATA ANALYSIS AND MINING PROJECT<br />
+                B.TECH. CSE - 3rd YEAR (5th SEMESTER)
+            </div>
+            <div class="team-info">
+                <p><strong>Group: G8</strong></p>
+                <p style="margin-top: 20px;"><strong>Team Members:</strong></p>
+                <p>Monika (23117023) | Sajal (23117032) | Sonal Saxena (23117036)</p>
+                <p style="margin-top: 20px;"><strong>Submitted To:</strong> Dr. Jagdeep Kaur</p>
+                <p>Department of Computer Science</p>
+                <p style="margin-top: 15px; font-size: 0.95em;">
+                    Dr. B R Ambedkar National Institute of Technology, Jalandhar
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 2: Abstract & Introduction -->
+        <div class="slide">
+            <h2>📋 Abstract</h2>
+            <p style="font-size: 1.1em; line-height: 1.8; text-align: justify;">
+                This project presents a comprehensive analysis of <strong>student online shopping behaviour</strong>
+                using data mining, statistical analysis, and machine learning techniques. The study focuses on
+                understanding key factors influencing students' e-commerce preferences and spending patterns.
+            </p>
+
+            <div style="margin-top: 30px;">
+                <h3>Key Highlights</h3>
+                <ul>
+                    <li>Dataset collected through survey responses (200 students)</li>
+                    <li>Analysis performed using <strong>R on Google Colab</strong></li>
+                    <li>Applied <strong>EDA, Association Rule Mining, and Random Forest</strong></li>
+                    <li>Revealed that <strong>product category and platform</strong> are most influential factors</li>
+                    <li>Insights support targeted strategies and personalized recommendations</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 3: Motivation & Objectives -->
+        <div class="slide">
+            <h2>🎯 Motivation & Objectives</h2>
+
+            <div class="key-finding">
+                <strong>Why This Project?</strong><br />
+                Online shopping has become integral to student life, driven by convenience,
+                discounts, and social media influence. Students represent a significant consumer
+                segment with unique preferences and evolving shopping habits.
+            </div>
+
+            <h3 style="margin-top: 30px;">Project Objectives</h3>
+            <div class="content-grid">
+                <div class="card">
+                    <h4>1. Identify Key Factors</h4>
+                    <p>Analyze factors influencing students' online shopping behavior</p>
+                </div>
+                <div class="card">
+                    <h4>2. Discover Patterns</h4>
+                    <p>Uncover association patterns using data mining techniques</p>
+                </div>
+                <div class="card">
+                    <h4>3. Build Predictive Models</h4>
+                    <p>Develop models to identify high-spending customers</p>
+                </div>
+                <div class="card">
+                    <h4>4. Actionable Insights</h4>
+                    <p>Bridge gap between raw data and business strategies</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Methodology -->
+        <div class="slide">
+            <h2>🔬 Methodology</h2>
+
+            <div class="methodology-step">
+                <div class="step-number">1</div>
+                <div>
+                    <h4>Data Collection</h4>
+                    <p>Online survey with 200 student responses capturing shopping behaviors</p>
+                </div>
+            </div>
+
+            <div class="methodology-step">
+                <div class="step-number">2</div>
+                <div>
+                    <h4>Data Cleaning & Preprocessing</h4>
+                    <p>Removed missing/duplicate values, normalized formats, converted to factors</p>
+                </div>
+            </div>
+
+            <div class="methodology-step">
+                <div class="step-number">3</div>
+                <div>
+                    <h4>Exploratory Data Analysis (EDA)</h4>
+                    <p>Descriptive statistics, visualizations, and trend analysis</p>
+                </div>
+            </div>
+
+            <div class="methodology-step">
+                <div class="step-number">4</div>
+                <div>
+                    <h4>Association Rule Mining</h4>
+                    <p>Identified frequent itemsets using arules package in R</p>
+                </div>
+            </div>
+
+            <div class="methodology-step">
+                <div class="step-number">5</div>
+                <div>
+                    <h4>Predictive Modeling (Random Forest)</h4>
+                    <p>Feature importance analysis and customer prediction</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Dataset Overview -->
+        <div class="slide">
+            <h2>📊 Dataset Overview</h2>
+
+            <div class="content-grid">
+                <div>
+                    <h3>Key Attributes</h3>
+                    <ul>
+                        <li><strong>Gender:</strong> Male / Female</li>
+                        <li><strong>Platform:</strong> Amazon, Flipkart, Myntra, etc.</li>
+                        <li><strong>Category:</strong> Fashion, Electronics, etc.</li>
+                        <li><strong>Frequency:</strong> Shopping frequency</li>
+                        <li><strong>Peer_Influence:</strong> Friend influence</li>
+                        <li><strong>Discount_Importance:</strong> Value of discounts</li>
+                        <li><strong>Payment_Method:</strong> UPI, COD, Cards</li>
+                        <li><strong>Recommendation_Helpfulness</strong></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="stat-box">
+                        <span class="number">200</span>
+                        <span class="label">Total Responses</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="number">195</span>
+                        <span class="label">Clean Records</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="number">13</span>
+                        <span class="label">Key Variables</span>
+                    </div>
+
+                    <div class="key-finding" style="margin-top: 20px;">
+                        <strong>Data Source:</strong><br />
+                        GitHub: monikaasidhu/student-eshopping-analysis
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: EDA Results - Platform & Category -->
+        <div class="slide">
+            <h2>📈 EDA Results: Platform & Category Analysis</h2>
+
+            <div class="content-grid">
+                <div>
+                    <h3>Platform Popularity</h3>
+                    <div class="chart-container">
+                        <img src="Images/platformPreference.png" alt="Bar chart of platform popularity among students" class="chart-image" />
+                        <p>Amazon: Highest share<br />Flipkart: Second most popular<br />Strong preference for established platforms</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Category Preferences</h3>
+                    <div class="chart-container">
+                        <img src="Images/CategoryDistribution.png" alt="Pie chart of product category distribution" class="chart-image" />
+                        <p>Fashion: Most purchased<br />Electronics: Second highest<br />Clear category preferences</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="key-finding" style="margin-top: 20px;">
+                <strong>Key Finding:</strong> Amazon and Flipkart dominate due to trust, convenience, and brand familiarity. Fashion and Electronics are the most commonly purchased categories.
+            </div>
+        </div>
+
+        <!-- Slide 7: Gender-Based Shopping Patterns -->
+        <div class="slide">
+            <h2>👥 Gender-Based Shopping Patterns</h2>
+
+            <div class="chart-container">
+                <h3>Shopping Frequency by Gender</h3>
+                <img src="Images/GenderDistribution.png" alt="Gender vs Shopping Frequency Bar Chart" class="chart-image" />
+            </div>
+
+            <div class="content-grid" style="margin-top: 30px;">
+                <div class="key-finding">
+                    <strong>Female Students:</strong><br />
+                    • Shop more frequently<br />
+                    • Prefer Fashion and Accessories<br />
+                    • Higher engagement with recommendations
+                </div>
+                <div class="key-finding">
+                    <strong>Male Students:</strong><br />
+                    • Focus on Electronics and Gadgets<br />
+                    • Less frequent but higher-value purchases<br />
+                    • Price and specification driven
+                </div>
+            </div>
+
+            <p style="margin-top: 20px; font-size: 1.05em; text-align: center;">
+                <strong>Insight:</strong> Clear gender-based segmentation useful for targeted marketing
+            </p>
+        </div>
+
+        <!-- Slide 8: Feature Importance Analysis -->
+        <div class="slide">
+            <h2>🎯 Feature Importance Analysis (Random Forest)</h2>
+
+            <div class="chart-container">
+                <img src="Images/featureImportance.png" alt="Feature Importance Bar Graph" class="chart-image" />
+            </div>
+
+            <h3 style="margin-top: 30px;">Top Important Features</h3>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Importance</th>
+                    <th>Impact</th>
+                </tr>
+                <tr>
+                    <td><strong>Category</strong></td>
+                    <td>Highest</td>
+                    <td>What students buy is most predictive</td>
+                </tr>
+                <tr>
+                    <td><strong>Platform</strong></td>
+                    <td>High</td>
+                    <td>Where they shop matters significantly</td>
+                </tr>
+                <tr>
+                    <td><strong>Frequency</strong></td>
+                    <td>High</td>
+                    <td>Shopping frequency indicates spending</td>
+                </tr>
+                <tr>
+                    <td>Discount/Payment</td>
+                    <td>Moderate</td>
+                    <td>Less influential than category/platform</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Slide 9: Association Rule Mining Results -->
+        <div class="slide">
+            <h2>🔗 Association Rule Mining Results</h2>
+
+            <div class="content-grid">
+                <div style="grid-column: 1 / -1;">
+                    <img src="Images/association.png" alt="Network graph of association rules" class="chart-image" />
+                </div>
+            </div>
+
+            <h3 style="margin-top: 30px;">Key Discovered Rules</h3>
+            <div class="key-finding">
+                <strong>Rule 1:</strong> Students purchasing Electronics often value Discounts and Cashback offers
+            </div>
+
+            <div class="key-finding">
+                <strong>Rule 2:</strong> Those influenced by Peers also consider Recommendation Helpfulness important
+            </div>
+
+            <div class="key-finding">
+                <strong>Rule 3:</strong> Students with High Shopping Frequency prefer Trusted Payment Methods
+            </div>
+
+            <p style="margin-top: 20px; text-align: center; font-size: 1.05em;">
+                <strong>Validation:</strong> Strong interconnection between convenience, trust, and peer influence
+            </p>
+        </div>
+
+        <!-- Slide 10: Key Findings Summary -->
+        <div class="slide">
+            <h2>💡 Key Findings & Discussion</h2>
+
+            <div class="methodology-step">
+                <div class="step-number">1</div>
+                <div>
+                    <strong>Active Digital Consumers</strong><br />
+                    Students engage frequently with e-commerce platforms
+                </div>
+            </div>
+
+            <div class="methodology-step">
+                <div class="step-number">2</div>
+                <div>
+                    <strong>Brand Trust Matters</strong><br />
+                    Amazon and Flipkart preference driven by trust and peer recommendations
+                </div>
+            </div>
+
+            <div class="methodology-step">
+                <div class="step-number">3</div>
+                <div>
+                    <strong>Category & Frequency Predict Spending</strong><br />
+                    Product categories and shopping frequency are key predictors
+                </div>
+            </div>
+
+            <div class="methodology-step">
+                <div class="step-number">4</div>
+                <div>
+                    <strong>Social Factors Outweigh Price</strong><br />
+                    Social and behavioral factors more influential than discounts alone
+                </div>
+            </div>
+
+            <div class="conclusion-box" style="margin-top: 30px;">
+                <p style="font-size: 1.15em; line-height: 1.6;">
+                    <strong>Overall:</strong> Students are socially connected and digitally confident,
+                    with decisions shaped by online influence and product relevance rather than price alone.
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 11: Conclusion -->
+        <div class="slide">
+            <h2>🎯 Conclusion</h2>
+
+            <p style="font-size: 1.1em; line-height: 1.8; text-align: justify;">
+                This study successfully analyzed student e-shopping behavior through data mining and
+                predictive modeling. The findings demonstrate that students form an active, digitally
+                engaged consumer segment influenced by both social and behavioral factors.
+            </p>
+
+            <h3 style="margin-top: 30px;">Major Conclusions</h3>
+            <ul>
+                <li><strong>Platform Preference:</strong> Amazon and Flipkart dominate due to trust and convenience</li>
+                <li><strong>Category Insights:</strong> Fashion and Electronics are most purchased; clear gender patterns exist</li>
+                <li><strong>Feature Importance:</strong> Category, Platform, and Frequency are strongest predictors</li>
+                <li><strong>Association Rules:</strong> Meaningful relationships discovered between discounts, peer influence, and recommendations</li>
+                <li><strong>Practical Value:</strong> Insights support personalized, data-driven engagement strategies</li>
+            </ul>
+
+            <div class="key-finding" style="margin-top: 30px;">
+                <strong>Project Success:</strong> All objectives met - identified factors, discovered associations,
+                and built predictive models for student e-commerce behavior.
+            </div>
+        </div>
+
+        <!-- Slide 12: Future Scope -->
+        <div class="slide">
+            <h2>🚀 Future Scope</h2>
+
+            <div class="content-grid">
+                <div class="card">
+                    <h4>📊 Larger Datasets</h4>
+                    <ul>
+                        <li>Multiple regions/institutions</li>
+                        <li>Improved generalizability</li>
+                        <li>Cross-demographic comparison</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>📈 Time-Series Analysis</h4>
+                    <ul>
+                        <li>Seasonal behavior patterns</li>
+                        <li>Event-driven shopping trends</li>
+                        <li>Semester-wise variations</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>🌐 Social Media Integration</h4>
+                    <ul>
+                        <li>Sentiment analysis</li>
+                        <li>Influencer impact metrics</li>
+                        <li>Trend correlation</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>🤖 Advanced Modeling</h4>
+                    <ul>
+                        <li>Deep learning techniques</li>
+                        <li>Ensemble methods</li>
+                        <li>LSTM for time series</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="conclusion-box" style="margin-top: 30px;">
+                <h3 style="color: white;">Recommendation System Development</h3>
+                <p style="margin-top: 15px;">
+                    Use derived association rules and feature importance to design a prototype
+                    personalized recommendation engine for student shoppers.
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 13: Thank You -->
+        <div class="slide title-slide">
+            <div class="icon">🙏</div>
+            <h1>Thank You!</h1>
+            <div class="subtitle">Questions & Discussion</div>
+
+            <div style="margin-top: 50px; font-size: 1.15em; line-height: 2;">
+                <p><strong>Group G8</strong></p>
+                <p>Monika (23117023) | Sajal (23117032) | Sonal Saxena (23117036)</p>
+                <br />
+                <p><strong>GitHub Repository:</strong></p>
+                <p>github.com/monikaasidhu/student-eshopping-analysis</p>
+                <br />
+                <p><strong>Guided by:</strong> Dr. Jagdeep Kaur</p>
+                <p>Department of Computer Science</p>
+                <p>Dr. B R Ambedkar NIT Jalandhar</p>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="navigation">
+            <button class="nav-button" id="prevBtn" onclick="changeSlide(-1)">← Previous</button>
+            <div class="slide-counter">
+                <span id="slideNumber">1</span> / <span id="totalSlides">13</span>
+            </div>
+            <button class="nav-button" id="nextBtn" onclick="changeSlide(1)">Next →</button>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        document.getElementById('totalSlides').textContent = totalSlides;
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + totalSlides) % totalSlides;
+            slides[currentSlide].classList.add('active');
+
+            document.getElementById('slideNumber').textContent = currentSlide + 1;
+
+            document.getElementById('prevBtn').disabled = currentSlide === 0;
+            document.getElementById('nextBtn').disabled = currentSlide === totalSlides - 1;
+        }
+
+        function changeSlide(direction) {
+            showSlide(currentSlide + direction);
+        }
+
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'ArrowLeft') {
+                changeSlide(-1);
+            } else if (event.key === 'ArrowRight' || event.key === ' ') {
+                changeSlide(1);
+            }
+        });
+
+        showSlide(0);
+    </script>
+</body>
+</html>
